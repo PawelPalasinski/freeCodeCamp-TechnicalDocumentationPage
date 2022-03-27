@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;500&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#navbar {
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  position: fixed;
+  min-width: 300px;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#navbar header {
+  font-size: 24px;
+  color: #000;
+  padding: 20px;
+}
+
+.navbar__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar__item {
+  border: 1px solid #fff;
+}
+
+.navbar__item .nav-link {
+  text-decoration: none;
+  color: grey;
+  line-height: 2;
+  margin-left: 20px;
+}
+
+article a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main-doc {
+  margin: 0px 20px 30px 320px;
+  padding-top: 30px;
+}
+
+section {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: #000;
+  text-align: justify;
+}
+
+section header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  margin: 10px 0;
+}
+
+article {
+  color: grey;
+  line-height: 1.5;
+}
+code {
+  color: #000;
+  font-weight: 500;
+  background-color: whitesmoke;
+}
+
+.code-block {
+  display: block;
+}
+
+.main-section__image {
+  padding-left: 40px;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+        text-align: center;
+        height: 400px;
+    }
+
+#navbar header {
+    text-align: center;
+}
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 295px;
+        border: none;
+        z-index: 1;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 5px;
+        margin-top: 295px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: 2px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}

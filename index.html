@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TITLE</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <nav id="navbar" class="navbar">
+      <header>JavaScript</header>
+
+      <ul class="navbar__list">
+        <li class="navbar__item"><a class="nav-link" href="#Podstawy_JavaScript" class="navbar__link">Podstawy JavaScript</a></li>
+        <li class="navbar__item"><a class="nav-link" href="#Czym_naprawdę_jest_JavaScript?" class="navbar__link">Czym naprawdę jest JavaScript?</a></li>
+        <li class="navbar__item"><a class="nav-link" href="#Przykład_hello_world" class="navbar__link">Przykład hello world</a></li>
+        <li class="navbar__item"><a class="nav-link" href="#Co_się_wydarzyło?" class="navbar__link">Co się wydarzyło?</a></li>
+        <li class="navbar__item"><a class="nav-link" href="#Podstawy_języka" class="navbar__link">Podstawy języka</a></li>
+        <li class="navbar__item"><a class="nav-link" href="#Źródła" class="navbar__link">Źródła</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Podstawy_JavaScript">
+        <header>Podstawy JavaScript</header>
+        <article>
+          <p>
+            JavaScript to język programowania, który dodaje interaktywność do
+            Twojej witryny (na przykład: gry, odpowiedzi po naciśnięciu
+            przycisków lub wprowadzeniu danych do formularza, dynamiczne
+            stylowanie, animacja). Ten artykuł pomoże Ci rozpocząć przygodę z
+            tym ekscytującym językiem oraz przedstawi przedsmak tego, co dzięki
+            niemu jest możliwe.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Czym_naprawdę_jest_JavaScript?">
+        <header>Czym naprawdę jest JavaScript?</header>
+        <article>
+          <p>
+            JavaScript (w skrócie "JS") jest pełnoprawnym dynamicznym językiem
+            programowania, który po dodaniu do dokumentu HTML, może dostarczyć
+            dynamiczną zawartość do stron internetowych. Został stworzony przez
+            Brendan'a Eich, współtwórcę projektu Mozilla, Mozilla Foundation i
+            Mozilla Corporation.
+          </p>
+
+          <p>
+            JavaScript jest niezwykle wszechstronny. Możesz zacząć z czymś
+            małym, z karuzelami, galeriami obrazków, zmiennymi układami strony i
+            odpowiedziami na kliknięcia przycisków. Z większym doświadczeniem,
+            będziesz w stanie stworzyć gry, animowane grafiki 2D i 3D,
+            kompleksowe aplikacje oparte na bazach danych i wiele więcej!
+          </p>
+
+          <p>
+            JavaScript jest dość zwarty, ale jednocześnie bardzo elastyczny.
+            Programiści napisali wiele różnych narzędzi z wykorzystaniem rdzenia
+            języka JavaScript, otwierając mnóstwo dodatkowych funkcjonalności
+            przy minimalnym wysiłku. Obejmują one:
+          </p>
+
+          <ul class="main-section__list">
+            <li>
+              Browser Application Programming Interfaces (APIs) — API wbudowane
+              w przeglądarki internetowe, zapewniające takie funkcjonalności jak
+              dynamiczne tworzenie HTML i ustawianie stylów CSS, zbieranie i
+              manipulowanie strumieniem wideo z kamery internetowej użytkownika
+              lub generowanie grafiki 3D i próbek audio.
+            </li>
+            <li>
+              API innych firm umożliwiające programistom dołączenie do swoich
+              witryn funkcjonalności pochodzących od innych dostawców treści,
+              takich jak Twitter czy Facebook.
+            </li>
+            <li>
+              Frameworki i biblioteki innych firm zewnętrznych, które możesz
+              wykorzystać w swoim kodzie HTML, by umożliwić sobie szybkie
+              tworzenie witryn i aplikacji internetowych.
+            </li>
+          </ul>
+
+          <p>
+            Ponieważ ten artykuł ma być jedynie lekkim wprowadzeniem do
+            JavaScript, nie będziemy mieszać Ci na tym etapie mówiąc szczegółowo
+            o tym, jaka jest różnica między jądrem języka JavaScript, a różnymi
+            narzędziami wymienionymi powyżej. Możesz później nauczyć się tego
+            wszystkiego szczegółowo, w naszym JavaScript learning area i w
+            pozostałych artykułach MDN.
+          </p>
+
+          <p>
+            Poniżej przedstawimy kilka aspektów podstaw języka, będziesz miał
+            także okazje pobawić się kilkoma funkcjonalnościami interfejsu API
+            przeglądarki. Baw się dobrze!
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Przykład_hello_world">
+        
+          <header>Przykład hello world</header>
+          <article>
+          <p>
+            Powyższa sekcja może brzmieć naprawdę ekscytująco i tak powinno być
+            — JavaScript jest jedną z najbardziej żywych technologii
+            internetowych i kiedy zaczniesz się nią dobrze posługiwać to twoje
+            witryny internetowe wejdą w nowy wymiar mocy i kreatywności.
+          </p>
+
+          <p>
+            Jednak uzyskanie poczucia komfortu w używaniu JavaScript jest
+            trudniejsze niż w przypadku korzystania z HTML i CSS. Być może
+            lepiej będzie zacząć powoli i kontynuować pracę za pomocą małych
+            konsekwentnych kroków. Na początek pokażemy, jak dodać podstawowy
+            kod JavaScript do Twojej strony tworząc przykład "hello world!"
+            (standard w podstawowych przykładach programowania).
+          </p>
+
+          <ol class="main-section__list--oredered">
+            <li>
+              Po pierwsze, przejdź do swojej strony testowej i utwórz nowy
+              folder o nazwie „scripts” (bez cudzysłowów). Następnie w nowym
+              folderze skryptów utwórz nowy plik o nazwie main.js. Zapisz go w
+              folrderze <code>scripts</code>.
+            </li>
+            <li>
+              Następnie w pliku <code>index.html</code> wprowadź następujący
+              element w nowej linii, tuż przed zamknięciem tagu
+              <code> &lt;body&gt;</code>:
+              <code class="code-block">&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code>
+            </li>
+            <li>
+              W zasadzie, ten kod działa identycznie, jak element
+              <code>&lt;link&gt;</code> w CSS — dodaje JavaScript do strony,
+              więc może mieć wpływ na HTML (wraz z CSS i czymkolwiek innym na
+              stronie).
+            </li>
+            <li>Teraz dodaj następujący kod do pliku <code>main.js</code>:
+            <code class="code-block">var myHeading = document.querySelector('h1');</code>
+            <code class="code-block">myHeading.textContent = 'Hello world!';</code>
+            
+            </li>
+            <li>
+              Na koniec upewnij się, że pliki HTML i JavaScript są zapisane, a
+              następnie załaduj index.html w przeglądarce. Powinieneś zobaczyć
+              coś takiego:
+            </li>
+          </ol>
+          <div class="main-section__image">
+            <img
+              src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/21/9543/3561d5218e249d28b330b94346633ed8/hello-world.png"
+              alt="example"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="Co_się_wydarzyło?">
+        <header>Co się wydarzyło?</header>
+
+        <article>
+          <p>
+            Twój tekst nagłówka został zmieniony na "Hello world!" przy użyciu
+            JavaScript. Zrobiłeś to najpierw, używając funkcji zwanej
+            <code> querySelector()</code> by chwycić referencje do nagłówka i
+            przechowywać ją w zmiennej o nazwie <code> myHeading</code>. Jest to
+            bardzo podobne do tego, co zrobiliśmy przy użyciu selektorów CSS.
+            Kiedy chcesz coś zrobić z elementem, najpierw musisz go wybrać.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Podstawy_języka">
+        <header>Podstawy języka</header>
+        <article>
+        <p>
+          Wytłumaczmy niektóre podstawowe cechy języka JavaScript, aby lepiej
+          zrozumieć, jak to wszystko działa. Warto zauważyć, że te cechy są
+          wspólne dla wszystkich języków programowania, więc jeśli opanujesz te
+          podstawy, jesteś na dobrej drodze aby móc programować w czymkolwiek!
+        </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Źródła">
+        <header>Źródła</header>
+        <article>
+          <ul class="main-section__list">
+            <li>
+              Dokumentacja z tej strony pochodzi z:
+              <a
+                href="hhttps://developer.mozilla.org/pl/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    
+  </body>
+</html>
